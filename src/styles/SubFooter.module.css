@@ -1,0 +1,130 @@
+.subFooter {
+    display: grid;
+    background: black;
+    color: var(--gray-100);
+    height: 100%;
+    padding: 3.125rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.subFooterInfos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+
+.infoShop {
+    display: grid;
+    color: var(--green-300);
+    width: 18.75rem;
+    margin: 2.5rem;
+}
+
+
+.infoShop img {
+    max-width: 9.375rem; /* Limita a largura máxima a 150px */
+    max-height: 9.375rem; /* Limita a altura máxima a 150px */
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+
+
+.categorias {
+    display: grid;
+    color: var(--green-300);
+    width: 18.75rem;
+    margin-left: 2.5rem;
+}
+
+.categorias a {
+    color: var(--green-300);
+}
+
+.institucional {
+    display: grid;
+    color: var(--green-300);
+    width: 18.75rem;
+    margin: 2.5rem;
+}
+
+.institucional a{
+    color: var(--green-300);
+}
+
+.contato {
+    display: grid;
+    color: var(--green-300);
+    width: 18.75rem;
+    margin: 2.5rem;
+}
+
+.contato a{
+    color: var(--green-300);
+}
+
+.contato div {
+    align-items: center;
+    justify-content: center;
+}
+
+.horario {
+    display: grid;
+    color: var(--green-300);
+    width: 18.75rem;
+    margin: 2.5rem;
+}
+
+.horario a{
+    color: var(--green-300);
+}
+
+.horario button {
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    border: 0;
+    color: var(--green-300);
+    background: var(--gray-900);
+    font-weight: bold;
+    cursor: pointer;
+    
+    transition: background-color 0.2s;
+}
+
+.horario button:hover {
+    color: var(--gray-100);
+    background: var(--green-300);
+}
+
+.verifyIcons  {
+    margin-left: 2rem;
+    display: flex;
+    background: white;
+    height: 3.125rem ;
+    width: 8.75rem;
+    border-radius: 10px;
+
+}
+
+.verifyIcons img {
+    height: 3.125rem;
+    width: 8.75rem;
+}
+
+.paymentsFooter{
+    object-fit: cover;
+    width: 100%;
+}
+
+@media (max-width: 1080px) {
+    .subFooterInfos {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+}

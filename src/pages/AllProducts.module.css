@@ -1,0 +1,13 @@
+.container {
+    margin-top: 16rem;
+}
+
+.allProducts {
+    margin-top: 8rem;
+}
+
+@media (max-width: 1024px) {
+    .allProducts {
+        margin-top: 4rem;
+    }
+}

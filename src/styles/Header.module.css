@@ -1,0 +1,156 @@
+.container {
+    display: grid;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 3.125rem;
+}
+
+.iconSearch, .iconCart {
+    color: var(--gray-700);
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+    padding: 0px 3rem;
+
+    cursor: pointer;
+}
+
+.iconEcommerce {
+    color: var(--gray-700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.iconSearch:hover, .iconCart:hover, .iconEcommerce:hover {
+    transform: scale(1.2); /* Aumenta o ícone em 20% */
+}
+
+.categories {
+    background: var(--gray-900);
+    border-bottom: 1px solid var(--green-300);
+    color: var(--gray-700);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 0.75rem;
+}
+
+
+.categories div{
+    color: var(--gray-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categoriesIcon {
+    background: transparent;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+    gap: 0.5rem;
+
+    cursor: pointer;
+}
+
+.categoriesIcon img {
+    max-width: 1.875rem;
+    max-height: 1.875rem;
+    object-fit: cover;
+}
+
+.categoriesIcon:hover {
+    color: var(--green-300);
+}
+
+.categories a {
+    size: 2.2rem;
+    font-weight: bold;
+    color: var(--gray-100);
+    text-decoration: none;
+    transition: color 0.1s;
+}
+
+.categories a:hover {
+    color: var(--gray-300);
+}
+
+
+@media (max-width: 1080px) {
+    .container {
+        display: grid;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 10rem;
+        width: 100%;
+        z-index: 1000;
+        background-color: #ffffff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .iconEcommerce {
+        height: 3rem;
+        color: var(--gray-700);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 0.3s ease;
+    }
+
+    .iconSearch, .iconCart {
+        color: var(--gray-700);
+        display: flex;
+        align-items: center;
+        transition: transform 0.3s ease;
+        padding: 0;
+    
+        cursor: pointer;
+    }
+
+    .categories {
+        background: var(--gray-900);
+        border-bottom: 1px solid var(--green-300);
+        color: var(--gray-700);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .categoriesIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 0rem 0.75rem;
+    }
+    
+}
+

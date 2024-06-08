@@ -1,0 +1,87 @@
+/* src/styles/NewsOfTheWeek.module.css */
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  object-fit: cover; /* Mantém a proporção da imagem */
+  overflow: hidden; /* Garante que não haja overflow */
+}
+
+.productsContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Define 5 colunas */
+  gap: 3.125rem; /* Espaço entre os produtos */
+  padding: 3.125rem; /* Remove os paddings laterais excessivos */
+  box-sizing: border-box; /* Inclui o padding no tamanho total */
+  width: 100%; /* Garante que o container ocupe 100% da largura disponível */
+  overflow: hidden; /* Garante que não haja overflow */
+}
+
+.moreProducts {
+  color: var(--gray-700);
+  padding: 3.125rem;
+  font-size: 1.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.moreProducts p {
+  padding: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  border-top: 1px solid var(--gray-700);
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.moreProducts p:hover {
+  transform: scale(1.1);
+}
+
+.productImage {
+  width: 100%;
+  height: auto;
+  max-height: 31.25; /* Limita a altura máxima a 500px */
+  object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+@media (max-width: 1024px) {
+  .productsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Define 5 colunas */
+    box-sizing: border-box; /* Inclui o padding no tamanho total */
+    width: 100%; /* Garante que o container ocupe 100% da largura disponível */
+    overflow: hidden; /* Garante que não haja overflow */
+    gap: 0;
+  }
+
+  .header {
+    width: 0%;
+    height: 0;
+  }
+}
+
+@media (max-width: 728px) {
+  .productsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Define 5 colunas */
+    box-sizing: border-box; /* Inclui o padding no tamanho total */
+    width: 100%; /* Garante que o container ocupe 100% da largura disponível */
+    overflow: hidden; /* Garante que não haja overflow */
+    padding: 0;
+    gap: 0;
+  }
+
+  .header {
+    width: 0%;
+    height: 0;
+  }
+}

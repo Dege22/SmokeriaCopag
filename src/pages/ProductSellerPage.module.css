@@ -1,0 +1,283 @@
+.containerMain {
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+}
+
+.containerProduct {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6.25rem;
+}
+
+.imgTitleContainer {
+    display: flex;
+}
+
+.imgContainer {
+    width: 30rem; /* Ajuste para o tamanho desejado */
+    height: 38rem; /* Ajuste para o tamanho desejado */
+    overflow: hidden; /* Esconde a parte da imagem que é aumentada */
+    position: relative; /* Necessário para posicionamento absoluto da imagem */
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem se comportar como cover */
+    transition: transform 0.3s ease;
+    position: absolute; /* Posiciona a imagem absolutamente dentro do contêiner */
+    top: 0;
+    left: 0;
+}
+
+.img:hover {
+    transform: scale(1.2); /* Aumenta a imagem em 20% */
+}
+
+.containerProductInfos {
+    width: 37.5rem;
+}
+
+.title {
+    padding: 0.625rem 0px;
+    display: grid;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+    border-top: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+.title strong {
+    font-size: 25px;
+    padding-bottom: 0.625rem;
+}
+
+.title a {
+    font-size: 10px;
+    color: #707070;
+}
+
+.title div {
+    display: flex;
+    align-items: center;
+}
+
+.title spam {
+    font-size: 12px;
+    color: #707070;
+}
+
+.promotionTime {
+    border-radius: 5px;
+    display: grid;
+    height: 6.875rem;
+    background-color: #009c00;
+    margin: 1.25rem 0px;
+}
+
+.promotionTime a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.quantityItems {
+    border-radius: 0px 0px 5px 5px;
+    font-weight: 500;
+    padding: 0px 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: #FFFFFF;
+}
+
+.quantityItems spam {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.quantityItems a {
+    font-size: 18px;
+}
+
+.mainValue {
+    font-size: 25px;
+}
+
+.oldValue {
+    text-decoration: line-through;
+    color: var(--gray-700); /* Você pode ajustar a cor conforme necessário */
+}
+
+.buttonPay {
+    margin-top: 3rem;
+    gap: 1rem;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.125rem;
+}
+
+.buttonPay spam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 9.375rem;
+}
+
+.buttonPay div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.buttonPay div a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.paymentMethods {
+    margin-top: 3rem;
+    display: grid;
+    border: 1px solid #eee!important;
+    border-radius: 5px;
+}
+
+.paymentMethods div {
+    display: flex;
+    height: 3.75rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+    border-bottom: 1px solid #eee!important;
+}
+
+.counter {
+    font-size: 1px;
+    width: 100%;
+    background-color: #009c00;
+}
+
+.buttonCard {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.counter a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    padding: 1rem;
+    margin-top: 5rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9;
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+}
+
+.description strong {
+    font-size: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.feedback {
+    overflow: hidden;
+}
+
+
+.paymentMethodsValue spam {
+    font-size: 12px;
+    color: #009c00;
+    font-weight: 600;
+    margin-right: 1rem;
+}
+
+.related {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.relatedContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 1024px) { 
+    .feedback {
+        height: 0;
+        width: 0;
+    }   
+
+    .imgContainer {
+        width: 100%; /* Ajuste para o tamanho desejado */
+        height: 30rem; /* Ajuste para o tamanho desejado */
+        overflow: hidden; /* Esconde a parte da imagem que é aumentada */
+        position: relative; /* Necessário para posicionamento absoluto da imagem */
+    }
+
+    .buttonPay div a {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    .containerProduct {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
+        margin-top: 2rem;
+    }
+
+    .containerProductInfos {
+        width: 100%;
+    }
+
+    /* Adicionando configurações específicas para dispositivos móveis */
+    .containerProduct {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title {
+        order: -1; /* Move o título para cima da imagem */
+    }
+
+    .containerProductInfos {
+        width: 100%;
+    }
+
+    .related {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
